@@ -41,7 +41,7 @@ def sim_total(m):
     return (0.45*cos + 0.25*max(0,1-sam/180) + 0.15*max(0,1-rr) +
             0.10*((pr+1)/2) + 0.05*((sr+1)/2)) * 100
 
-st.title("Comparador Espectral - Top 3 Picos por Banda")
+st.title("Comparador Espectral")
 modo = st.sidebar.selectbox("Modo de datos", ["Reflectancia", "Transmitancia"])
 pat_files = st.sidebar.file_uploader("Patrones (.txt,.csv)", type=['txt','csv'], accept_multiple_files=True)
 sam_files = st.sidebar.file_uploader("Muestras (.txt,.csv)", type=['txt','csv'], accept_multiple_files=True)
