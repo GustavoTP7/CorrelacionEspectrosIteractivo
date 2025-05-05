@@ -96,7 +96,7 @@ if pat_files and sam_files:
     # sort by wavelength
     feats = sorted(feats, key=lambda x: x[0])
     df_feats = pd.DataFrame(feats, columns=["Wavelength (nm)", f"Valor ({modo} Patrón)", f"Valor ({modo} Muestra)"]).round(4)
-    st.subheader("Top 3 características por banda")
+    st.subheader("Picos Características")
     st.table(df_feats)
 
     # plot
